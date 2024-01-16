@@ -1,0 +1,36 @@
+*{margin: 0; padding: 0;}
+body{font-family: sans-serif;  background: hsla(0, 70%, 68%, 1);}
+.player-wrapper{width: 40%; height: 65vh; position: absolute; top: 50%; left: 50%;
+transform: translate(-50%, -50%); display: flex;}
+.player_0{width: 50%; height: 65vh; background: #f7f7f7; text-align: center;}
+.player_1{width: 50%; height: 65vh; background: #f7f7f7; text-align: center;}
+.player-name{position: relative; margin-top: 65px; font-size: 25px; color: #8f8f94;}
+ span{position: absolute; width: 10px; height: 10px; background: red;
+top: 12px; right: 40px; border-radius: 50%; display: none;}
+.active{font-weight: 700; background: #f3e9e9;}
+
+.player-score{margin-top: 20px; font-size: 58px; color: red; font-weight: 300;}
+.current-score{margin-top: 120px;}
+.current{margin-bottom: 10px; font-size: 15px;}
+.current-score{margin: auto; margin-top: 80px; padding: 10px 3px; background: red; color: #fff; width: 100px; height: auto;}
+.contol-btn{position: absolute; left: 43%; top: 35px;}
+.contol-btn > p{white-space: nowrap; font-size: 14px; position: absolute;}
+.new-game, .roll, .new-game, .hold{cursor: pointer;}
+.roll{/*margin-top: 50px;*/ top: 220px;}
+.hold{/*margin-top: 10px; margin-left: 15px;*/ top: 260px; left: 18px;}
+.dice_value{/*margin-top: 100px; margin-left: 20px;*/ top: 75px; left: 18px; font-size: 70px!important;}
+.dice_value2{top: 135px; left: 18px; font-size: 70px!important;}
+.winner{color: red;}
+.active span{display: block;}
+.contol-btn > input{width: 100px; padding: 5px 2px; outline: none; /*border-radius: 10px;*/ position: absolute;
+top: 290px; left: -20px; border: 2px solid #ddd; font-size: 20px;}
+
+@media(max-width: 679px){
+	.player-wrapper{width: 95%;}
+	.player-name{font-size: 18px;}
+	.player-name span{right: 30px; top: 5px;}
+	.current-score{width: 90px;}
+	.current-score > p{font-size: 16px;}
+	.contol-btn{left: 41%;}
+	p.roll{font-size: 13px!important;}
+}
